@@ -1,0 +1,15 @@
+app:
+  name: rbohne-poi-backend-app
+  namespace: rbohne
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/rbohne-backend
+  org: rhdh23-lab
+  name: rbohne-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rbohne/poi-backend-app
+  tag: latest
